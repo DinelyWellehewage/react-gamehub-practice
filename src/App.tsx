@@ -6,16 +6,12 @@ function App() {
     <Grid
       templateAreas={{ base: `"nav" "main"`, lg: `"nav nav" "aside main"` }}
     >
-      <GridItem area="nav" bg="coral">
+      <GridItem area="nav">
         <NavBar />
       </GridItem>
       <Show above="lg" />
-      <GridItem area="aside" bg="gold">
-        Aside
-      </GridItem>
-      <GridItem area="main" bg="doggelblue">
-        Main
-      </GridItem>
+      <GridItem area="aside">Aside</GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   );
 }
